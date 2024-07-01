@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <title>Netflix Clone</title>
 </head>
-<body class="bg-black scrollbar-hide">
+<body class="bg-black scrollbar-hide scroll-smooth">
   <header>
     <div class="">
       <div class="flex justify-between text-center items-center w-65vw h-[92px] px-[32px] py-[24px] mr-auto ml-auto">
@@ -41,15 +41,21 @@
 
   <main>
     <div class="flex justify-center text-center items-center w-75vw mr-auto ml-auto">
-      <div class="flex justify-center text-center items-center h-100vh">
-        <div class="">
-          <h1 class="text-white">
+      <div class="flex justify-center text-center items-center h-90vh">
+        <div class="relative transform transition-transform duration-500 hover:scale-110">
+          <h1 class="text-white absolute inset-0 flex items-center justify-center text-3xl">
             Welcome to Netflix
           </h1>
 
-          <img class="opacity-40 rounded-lg w-75vw transform transition-transform duration-500 hover:scale-110 " src="https://assets.nflxext.com/ffe/siteui/vlv3/335ddde7-3955-499c-b4cc-ca2eb7e1ae71/939c9a27-60ff-4003-876e-6fda15ecbbc2/IT-it-20240624-POP_SIGNUP_TWO_WEEKS-perspective_WEB_a82da553-72dc-4b6b-a8da-73f215621efe_large.jpg" alt="">
+          <img class="opacity-40 rounded-lg w-75vw" src="https://assets.nflxext.com/ffe/siteui/vlv3/335ddde7-3955-499c-b4cc-ca2eb7e1ae71/939c9a27-60ff-4003-876e-6fda15ecbbc2/IT-it-20240624-POP_SIGNUP_TWO_WEEKS-perspective_WEB_a82da553-72dc-4b6b-a8da-73f215621efe_large.jpg" alt="">
         </div>
       </div>
+    </div>
+
+    <div class="flex justify-center items-center text-center mr-auto ml-auto h-6 w-6 animate-bounce pt-12">
+      <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+      </svg>
     </div>
 
     <div class="h-100vh">
