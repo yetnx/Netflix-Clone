@@ -56,4 +56,3 @@ document.getElementById('revealButton').addEventListener('click', function() {
       hiddenDiv.classList.add('hidden');
     }
   });
-  
