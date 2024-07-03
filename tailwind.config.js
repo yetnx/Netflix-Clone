@@ -65,6 +65,7 @@ export default {
       colors: {
         'custom-gray': 'rgb(45, 45, 45)',
         'light-gray': 'rgb(75, 75, 75)', // Lighter version of the custom gray
+        'gray': 'rgba(255,255,255,0.7)',
       },
     },
   },
