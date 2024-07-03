@@ -62,6 +62,10 @@ export default {
         'custom-gradient': 'linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%)',
         'custom-image': "url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif')"
       },
+      colors: {
+        'custom-gray': 'rgb(45, 45, 45)',
+        'light-gray': 'rgb(75, 75, 75)', // Lighter version of the custom gray
+      },
     },
   },
   plugins: [],
