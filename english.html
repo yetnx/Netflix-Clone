@@ -21,22 +21,34 @@
             </g>
           </svg>
         </div>
-  
-        <div>
-          <div>
-            <a class="" href="">
-              <button class="bg-red-700 hover:scale-110 ease-in-out w-[75px] h-[36px] rounded-[4px] hover:bg-red-900 transition-all duration-500 ">
-                <h3 class="text-white">
-                  Accedi
-                </h3>
-              </button>
-            </a>
+          
+        <div class="flex justify-center items-center text-center">
+          <div class="flex bg-transparent p-4 pr-8 rounded">
+            <label for="languageSelect" class="text-gray-700"></label>
+            <div class="relative">
+                <div>
+                  <select id="languageSelect" name="languageSelect" class="block appearance-none text-white w-full bg-transparent border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <option lang="it" label="Italiano" value="it-IT">Italiano</option>
+                    <option lang="en" label="English" value="en-IT" selected>English</option>
+                  </select>
+                </div>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-white h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M7 7l3-3 3 3H7zm0 6l3 3 3-3H7z"/></svg>
+                </div>
+            </div>
           </div>
+
+          <a class="" href="">
+            <button class="bg-red-700 hover:scale-110 ease-in-out w-[75px] h-[36px] rounded-[4px] hover:bg-red-900 transition-all duration-500 ">
+              <h3 class="text-white">
+                Sign in
+              </h3>
+            </button>
+          </a>
         </div>
       </div>
-
-      <!-- For a clean transition  transform transition-transform duration-500 hover:scale-110 -->
     </div>
+      <!-- For a clean transition  transform transition-transform duration-500 hover:scale-110 -->
   </header>
 
   <main>
@@ -44,7 +56,7 @@
       <div class="flex justify-center text-center items-center h-90vh">
         <div class="relative transform transition-transform duration-500 hover:scale-110">
           <h1 class="text-white absolute inset-0 flex items-center justify-center text-[60px]">
-            Benvenuto su Netflix
+            Welcome to Netflix
           </h1>
 
           <div class="opacity-60 rounded-lg w-75vw">
@@ -64,11 +76,11 @@
       <div class="flex justify-between text-center items-center h-70vh w-70vw mx-auto">
         <div class="w-[600px]">
           <h1 class="text-white text-[40px]">
-            Goditi Netflix sulla tua TV
+            Enjoy on your TV
           </h1>
 
           <p class="text-white text-[20px]">
-            Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
           </p>
         </div>
 
@@ -94,11 +106,11 @@
 
         <div class="w-[600px]">
           <h1 class="text-white text-[40px]">
-            Guarda Netflix ovunque
+            Watch everywhere
           </h1>
   
           <h3 class="text-white text-[20px]">
-            Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti.
+            Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
           </h3>
         </div>
       </div>
@@ -108,11 +120,11 @@
       <div class="flex justify-between text-center items-center h-70vh w-70vw mx-auto">
         <div class="w-[600px]"> 
           <h1 class="text-white text-[40px]">
-            Crea profili per i bambini
+            Create profiles for kids
           </h1>
   
           <h3 class="text-white text-[20px]">
-            I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.
+            Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
           </h3>
         </div>
 
@@ -127,7 +139,7 @@
         <div class="relative">
           <img class="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
           
-          <div class="flex justify-between items-center p-4 absolute left-32 bottom-[8%] h-28 w-96 bg-black rounded-lg border">
+          <div class="flex justify-between items-center p-4 absolute left-32 bottom-[8%] h-28 w-96 bg-black rounded-lg border border-x-light-gray">
             <div>
               <img class="h-[80px] w-[57px] rounded-md" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="">
             </div>
@@ -138,7 +150,7 @@
               </h1>
 
               <h3 class="text-blue-600">
-                Download in corso...
+                Downloading...
               </h3>
             </div>
 
@@ -150,11 +162,11 @@
 
         <div class="w-[600px]">
           <h1 class="text-white text-[40px]">
-            Scarica le tue serie da guardare offline
+            Download your shows to watch offline
           </h1>
 
           <h3 class="text-white text-[20px]">
-            Guarda in aereo, sul treno, in astronave...
+            Watch on a plane, train, or submarine...
           </h3>
         </div>
       </div>
@@ -166,7 +178,7 @@
       <div class="h-90vh">
         <div class="flex justify-center items-center">
           <h1 class="text-white text-5xl">
-            Domande Frequenti
+            Frequently Asked Questions
           </h1>
         </div>
 
@@ -174,86 +186,86 @@
           <ul>
             <li class="pt-3">
               <button id="revealButton" class="w-70vw h-20 px-4 py-2 font-semibold text-white bg-custom-gray rounded hover:bg-light-gray transition-all duration-700">
-                Cos'è Netflix?
+                What is Netflix?
               </button>
 
               <div id="hiddenDiv" class="mt-[2px] hidden w-70vw ">
                 <p class="text-white p-4 bg-custom-gray rounded shadow text-left">
-                  Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet.
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
 
                   <br>
                   <br>
 
-                  Guarda quello che vuoi, quando vuoi. Il tutto a una quota mensile ridotta. C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV ogni settimana!
+                  You can watch as much as you want, whenever you want – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!                
                 </p>
               </div>
 
             <li class="pt-3">
               <button id="revealButton1" class="w-70vw h-20 px-4 py-2 font-semibold text-white bg-custom-gray rounded hover:bg-light-gray transition-all duration-700">
-                Quanto costa Netflix?
+                How much does Netflix cost?
               </button>
 
               <div id="hiddenDiv1" class="mt-[2px] hidden w-70vw ">
                 <p class="text-white p-4 bg-custom-gray rounded shadow text-left">
-                  Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi per lo streaming, il tutto per un importo mensile fisso. Piani da 5,49 € a 17,99 € al mese. Nessun costo aggiuntivo, nessun contratto.
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EUR 5.49 to EUR 17.99 a month. No extra costs, no contracts.
                 </p>
               </div>
             </li>
 
             <li class="pt-3">
               <button id="revealButton2" class="w-70vw h-20 px-4 py-2 font-semibold text-white bg-custom-gray rounded hover:bg-light-gray transition-all duration-700">
-                Dove posso guardare Netflix?
+                Where can I watch?
               </button>
 
               <div id="hiddenDiv2" class="mt-[2px] hidden w-70vw ">
                 <p class="text-white p-4 bg-custom-gray rounded shadow text-left">
-                  Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per guardare subito Netflix dal tuo computer su netflix.com oppure da qualsiasi dispositivo connesso a Internet che supporta l'app Netflix, come smart TV, smartphone, tablet, lettori multimediali per streaming e console per videogiochi.
+                    Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
                   
                   <br>
                   <br>
 
-                  Con l'app per iOS o Android puoi anche scaricare i tuoi programmi preferiti. Usa la funzionalità di download per guardare i contenuti mentre sei in viaggio e senza connessione a Internet. Porta Netflix sempre con te.
+                  You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
                 </p>
               </div>
             </li>
 
             <li class="pt-3">
               <button id="revealButton3" class="w-70vw h-20 px-4 py-2 font-semibold text-white bg-custom-gray rounded hover:bg-light-gray transition-all duration-700">
-                Come posso disdire?
+                How do I cancel?
               </button>
 
               <div id="hiddenDiv3" class="mt-[2px] hidden w-70vw ">
                 <p class="text-white p-4 bg-custom-gray rounded shadow text-left">
-                  Netflix è flessibile. Nessun contratto fastidioso e nessun impegno. Puoi facilmente disdire il tuo contratto online con due clic. Nessuna penale: attiva o disdici il tuo account in qualsiasi momento.
+                    Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
                 </p>
               </div>
             </li>
 
             <li class="pt-3">
               <button id="revealButton4" class="w-70vw h-20 px-4 py-2 font-semibold text-white bg-custom-gray rounded hover:bg-light-gray transition-all duration-700">
-                Cosa posso guardare su Netflix?
+                What can I watch on Netflix?
               </button>
 
               <div id="hiddenDiv4" class="mt-[2px] hidden w-70vw ">
                 <p class="text-white p-4 bg-custom-gray rounded shadow text-left">
-                  Netflix ha un nutrito catalogo di lungometraggi, documentari, serie TV, anime, originali Netflix pluripremiati e tanto altro. Guarda tutto quello che vuoi, in qualsiasi momento.
+                    Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
                 </p>
               </div>
             </li>
 
             <li class="pt-3">
               <button id="revealButton5" class="w-70vw h-20 px-4 py-2 font-semibold text-white bg-custom-gray rounded hover:bg-light-gray transition-all duration-700">
-                Netflix è adatto ai bambini?
+                Is Netflix good for kids?
               </button>
 
               <div id="hiddenDiv5" class="mt-[2px] hidden w-70vw ">
                 <p class="text-white p-4 bg-custom-gray rounded shadow text-left">
-                  L'area Netflix Bambini, già inclusa nell'abbonamento, offre ai genitori un maggiore controllo sui contenuti e ai più piccoli uno spazio dedicato dove guardare serie TV e film per tutta la famiglia.
+                    The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
 
                   <br>
                   <br>
 
-                  I profili Bambini hanno un filtro famiglia con PIN che ti permette di limitare l'accesso ai contenuti in base alla fascia d'età e bloccare la visione di titoli specifici.
+                  Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
                 </p>
               </div>
             </li>
@@ -264,7 +276,7 @@
       <div>
         <div class="flex justify-center text-center">
           <p class="text-gray opacity-25 p-3">
-            Netflix Italia
+            Netflix Italy
           </p>
         </div>
       </div>
