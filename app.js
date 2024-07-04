@@ -37,3 +37,15 @@
     document.getElementById('revealButton5').addEventListener('click', function() {
       toggleDiv('hiddenDiv5');
     });
+
+
+
+    document.getElementById('languageSelect').addEventListener('change', function() {
+      const selectedLanguage = this.value;
+      if (selectedLanguage === 'it-IT') {
+          window.location.href = 'index.html';
+      } else if (selectedLanguage === 'en-IT') {
+          window.location.href = 'english.html';
+      }
+      });
+  
